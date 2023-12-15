@@ -1,0 +1,123 @@
+[
+    {
+        "id": 1,
+        "text": "React Hooks revolutionized the way developers handle stateful logic and side effects in React functional components. Introduced in React version 16.8, Hooks provide a more elegant and concise way to manage state and utilize React features within functional components.",
+        "code": null,
+        "hooks": null
+    },
+    {
+        "id": 2,
+        "text": "Traditionally, state management and lifecycle methods were exclusive to class components in React. Functional components were used primarily for presentation, leading to complex hierarchies or the adoption of higher-order components or render props for managing state.",
+        "code": null,
+        "hooks": null
+    },
+    {
+        "id": 3,
+        "text": "React Hooks changed this paradigm, allowing functional components to have their own state, perform side effects, and access React features like context or lifecycle methods without the need for class components.",
+        "code": null,
+        "hooks": null
+    },
+    {
+        "id": 0,
+        "text": "CLICK THE BUTTON TO COPY THE CODE",
+        "code": null,
+        "hooks": null
+    },
+    {
+        "id": 4,
+        "text": "useState A Component's Memory Components often need to change what’s on the screen as a result of an interaction. Typing into the form should update the input field, clicking “next” on an image carousel should change which image is displayed, clicking “buy” should put a product in the shopping cart. Components need to “remember” things: the current input value, the current image, the shopping cart. In React, this kind of component-specific memory is called state.",
+        "code": "",
+        "hooks": "useState"
+    },
+    {
+        "id": 5,
+        "text": "1 - Import useState: First, you import useState from the 'react' library.",
+        "code": "import React, { useState } from 'react';",
+        "hooks": "useState"
+    },
+    {
+        "id": 6,
+        "text": "2 - Declare State Variable: Inside a functional component, you use useState to declare a state variable and its corresponding setter function. Here, count is the state variable, and setCount is the function that updates the count state. useState(0) initializes count with an initial value of 0.",
+        "code": "const [count , setCount] = useState(0);",
+        "hooks": "useState"
+    },
+    {
+        "id": 7,
+        "text": "3 - Rendering the State: Use the state variable within the component's JSX to display its value. This line renders the current value of count in the paragraph element.",
+        "code": "<p>Count: {count}</p>",
+        "hooks": "useState"
+    },
+    {
+        "id": 8,
+        "text": "4 - Updating the State: To update the state variable, call the setter function (setCount in this case) with the new value. It triggers a re-render of the component.",
+        "code": "<button onClick={() => setCount(count + 1)}>Increase Count</button>",
+        "hooks": "useState"
+    },
+    {
+        "id": 9,
+        "text": "Synchronizing with useEffect Some components need to synchronize with external systems. For example, you might want to control a non-React component based on the React state, set up a server connection, or send an analytics log when a component appears on the screen. useEffect let you run some code after rendering so that you can synchronize your component with some system outside of React.",
+        "code": "",
+        "hooks": "useEffect"
+    },
+    {
+        "id": 10,
+        "text": "1 - Import useEffect from React: In your functional component file, import useEffect from the React library. This makes it available for use within your component.",
+        "code": "import React, { useEffect } from 'react';",
+        "hooks": "useEffect"
+    },
+    {
+        "id": 11,
+        "text": "2 - Declare your functional component Define your functional component where you'll be using useEffect. This is where your component logic and JSX/UI will reside.",
+        "code": "function YourComponent() { return ();}",
+        "hooks": "useEffect"
+    },
+    {
+        "id": 12,
+        "text": "3 - Integrate useEffect within your component: Inside your functional component, use useEffect. This hook accepts a function as its first argument. This function will contain code that executes side-effects.",
+        "code": "function YourComponent() { useEffect(() => {}); return ();}",
+        "hooks": "useEffect"
+    },
+    {
+        "id": 13,
+        "text": "4 - Specify dependencies for the effect (optional): You can pass a second argument to useEffect, which is an array of dependencies. By specifying dependencies, the effect will only re-run if any of these dependencies change between renders.",
+        "code": "function YourComponent() { useEffect(() => {},[dependencies]); return ();}",
+        "hooks": "useEffect"
+    },
+    {
+        "id": 14,
+        "text": "useRef is a Hook in React that provides a way to interact with DOM elements directly. It allows you to reference a DOM node or a React element and persists across renders without causing a re-render when the reference changes. Remember, useRef is not only for DOM elements; it can also be used to hold mutable values that persist across renders without causing a re-render when the reference changes.",
+        "code": "",
+        "hooks": "useRef"
+    },
+    {
+        "id": 15,
+        "text": "1 - Import useRef from React.",
+        "code": "import React, { useRef } from 'react';",
+        "hooks": "useRef"
+    },
+    {
+        "id": 16,
+        "text": "2 - Declare the Ref variable Inside your functional component, declare a variable using useRef(), Replace initialValue with the initial value for the reference, which can be null or an initial value for certain HTML elements.",
+        "code": "const myRef = useRef(initialValue);",
+        "hooks": "useRef"
+    },
+    {
+        "id": 17,
+        "text": "3 - Attach the Ref to an Element Assign the ref attribute to the element you want to reference,Here, myRef will reference the input element.",
+        "code": "return ( <div> <input ref={myRef} /> <button onClick={focusInput}>Focus Input</button></div>);",
+        "hooks": "useRef"
+    },
+    {
+        "id": 18,
+        "text": "4 - Accessing the Ref You can access the DOM node using myRef.current. For instance, to focus on the input element.",
+        "code": "const focusInput = () => {myRef.current.focus();};",
+        "hooks": "useRef"
+    },
+    {
+        "id": 19,
+        "text": "Sorry, Page Under Maintenance!",
+        "code": "",
+        "hooks": "error"
+    }
+
+]
